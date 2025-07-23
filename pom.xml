@@ -13,6 +13,48 @@
         <maven.compiler.target>23</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    
+    
+    
+    
+<build>
+  <pluginManagement>
+        <plugins>
+                <plugin>
+     				 <groupId>org.apache.maven.plugins</groupId>
+     				 <artifactId>maven-compiler-plugin</artifactId>
+     				 <version>3.11.0</version> <!-- Or newer -->
+     					 <configuration>
+		      				     <source>1.8</source>     <!-- Java 8 -->
+		       					 <target>1.8</target>
+     				    </configuration>
+             	</plugin>
+         
+     
+        
+		                <plugin>
+			                      <groupId>org.apache.maven.plugins</groupId>
+			               		  <artifactId>maven-surefire-plugin</artifactId>
+			               		  <version>3.2.5</version>
+			               		 
+			               		   <configuration>
+			                           <!-- Path to your TestNG XML suite file -->
+			                   		   <suiteXmlFiles>
+			                        		<suiteXmlFile>testng.xml</suiteXmlFile>
+			                        		
+			                        		<!--<suiteXmlFile>crossBrowser.xml</suiteXmlFie>-->
+			                        		
+			                   		 </suiteXmlFiles>
+			               		  </configuration>
+		               </plugin>
+		            
+            
+        </plugins>
+  </pluginManagement>
+</build>
+
+    
+    
 
 
     <dependencies>
