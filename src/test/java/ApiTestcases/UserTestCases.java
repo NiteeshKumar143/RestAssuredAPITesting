@@ -7,9 +7,7 @@ import ApiEndPoints.UserEndPoints;
 import ApiPayload.user;
 import com.github.javafaker.Faker;
 import io.restassured.response.Response;
-import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+
 
 public class UserTestCases
 {
@@ -41,7 +39,7 @@ public class UserTestCases
                   response.then().log().all();
                   // Validations
                   AssertJUnit.assertEquals(response.getStatusCode(), 200);
-                  System.out.println("Status code is correct");
+                  System.out.println("Status code is correct and fine");
               }
 
 

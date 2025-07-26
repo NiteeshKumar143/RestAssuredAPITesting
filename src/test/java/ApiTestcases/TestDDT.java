@@ -32,7 +32,7 @@ public class TestDDT
         response.then().log().all();
         // Validations
         AssertJUnit.assertEquals(response.getStatusCode(), 200);
-        System.out.println("Test case 1 success !!");
+        System.out.println("Test case 1 success okay !!");
     }
     @Test(priority = 2, dataProvider = "UserNamesData", dataProviderClass = DataProviders.class)
     public void testgetuser(String username)
